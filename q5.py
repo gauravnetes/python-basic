@@ -34,3 +34,32 @@ def pop_element(lst, index):
 
 pop_element(my_list, 1)
 print(my_list)
+
+def reverse_list(lst):
+    lst.reverse()
+    print("reversed list: ", lst)
+reverse_list(my_list)
+
+# Main program
+def main():
+    # Create an initial list
+    lst = [10, 20, 30, 40, 50]
+    
+    # Display the original list
+    display_list(lst)
+
+    # Add an element
+    add_element(lst, 60)
+
+    # Remove an element
+    remove_element(lst, 30)
+
+    # Pop an element by index
+    pop_element(lst, 2)
+
+    # Reverse the list
+    reverse_list(lst)
+
+# Run the main program
+if __name__ == "__main__":
+    main()
